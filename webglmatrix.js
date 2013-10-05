@@ -46,8 +46,8 @@ function compatGetGLContext(canvas) {
 }
 
 var compatRequestAnimationFrame =
-    window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
+    window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.msRequestAnimationFrame;
 
