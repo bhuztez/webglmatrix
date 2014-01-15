@@ -480,7 +480,7 @@ function mainloop(ctx) {
             gl.vertexAttribPointer(ctx.position, 3, gl.FLOAT, false, 0, 0);
 
             gl.bindBuffer(gl.ARRAY_BUFFER, strip.texture_coord_buffer);
-            gl.vertexAttribPointer(ctx.tex_coord, 2, gl.FLOAT, false, 0, 0);
+            gl.vertexAttribPointer(ctx.texcoord, 2, gl.FLOAT, false, 0, 0);
 
             gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, strip.vertices_indices_buffer);
             gl.drawElements(gl.TRIANGLES, (GRID_SIZE+1)*6, gl.UNSIGNED_SHORT, 0);
